@@ -1,0 +1,40 @@
+@use "../abstracts/config";
+
+// Features-Head
+.features-head {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 2rem 0;
+
+  &__container {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 4rem;
+  }
+
+  &__description {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__image img {
+    width: 200px;
+    justify-self: flex-end;
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .features-head {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  }
+}

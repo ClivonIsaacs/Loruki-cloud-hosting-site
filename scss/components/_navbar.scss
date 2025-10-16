@@ -1,0 +1,54 @@
+@use "../abstracts/config";
+
+// Navbar
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-title {
+    font-weight: 600;
+  }
+
+  //   Menu
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 1.2rem;
+    padding-top: 0.2rem;
+  }
+
+  .nav-link {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 1.04rem;
+
+    &:hover {
+      border-bottom: 2px solid #fff;
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 576px) {
+  .navbar {
+    height: 110px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__menu-list {
+      padding: 10.5px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}

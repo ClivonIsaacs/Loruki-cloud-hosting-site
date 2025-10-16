@@ -1,0 +1,49 @@
+@use "../abstracts/config";
+
+//  Docs-Main
+.docs-main {
+  margin: 3rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .card-light {
+    &__title {
+      margin: 20px 0;
+    }
+
+    &__item {
+      font-size: 17px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    &__link {
+      font-weight: 300;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .card {
+    &__text {
+      margin-top: 2rem;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .docs-main__container {
+    grid-template-columns: 1fr;
+  }
+}

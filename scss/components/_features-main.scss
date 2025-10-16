@@ -1,0 +1,48 @@
+@use "../abstracts/config";
+
+// Features-Main
+.features-main {
+  margin: 3rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    overflow-x: hidden;
+
+    > *:first-child {
+      grid-column: 1 / span 3;
+    }
+
+    > *:nth-child(2) {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .features-main {
+    &__container {
+      grid-template-columns: 1fr;
+
+      > *:first-child {
+        grid-column: 1 / span 1;
+      }
+
+      > *:nth-child(2) {
+        grid-column: 1 / span 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use "../abstracts/config";
+
+// Sub-Head
+.sub-head {
+  background-color: var(--light-color);
+  color: #333;
+  padding: 2rem 0;
+
+  &__container {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__description {
+    font-size: 17px;
+    font-weight: normal;
+  }
+
+  &__image img {
+    max-width: 300px;
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .sub-head {
+    &__container {
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+    }
+  }
+}

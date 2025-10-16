@@ -1,0 +1,39 @@
+@use "../abstracts/config";
+
+// Cloud
+.cloud {
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+  background-color: var(--primary-color);
+  color: #fff;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__description {
+    margin: 1.5rem 0;
+    font-size: 19px;
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .cloud {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

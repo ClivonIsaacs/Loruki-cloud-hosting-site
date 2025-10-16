@@ -1,0 +1,36 @@
+@use "../abstracts/config";
+
+// Cli
+.cli {
+  margin: 2.8rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    > *:first-child {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
+  }
+
+  .card {
+    text-align: left;
+  }
+}
+
+// Media Queries
+@media (max-width: 768px) {
+  .cli {
+    &__container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+
+      > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+}
