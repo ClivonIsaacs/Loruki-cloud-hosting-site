@@ -1,0 +1,1 @@
+## Loruki is a fully responsive, modern cloud hosting landing page built with semantic HTML and SCSS. It includes a sleek design, interactive UI, CLI installation instructions, and responsive layouts for all devices. Inspired by real-world SaaS platforms, it's a great frontend project to showcase your HTML/CSS skills.
